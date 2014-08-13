@@ -1,0 +1,17 @@
+name: Arcade
+main: com.pvpitup.arcade.Arcade
+version: 1.0
+description: PvPitUp Arcade
+commands:
+  vote:
+    description: Vote command.
+  ctc_create:
+    description: CaptureTheDog command.
+  ctc_setblue:
+    description: CaptureTheDog command.
+  ctc_setred:
+    description: CaptureTheDog command.
+  ctc_setspec:
+    description: CaptureTheDog command.
+  arcade:
+    description: Arcade command.
