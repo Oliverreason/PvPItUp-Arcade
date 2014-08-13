@@ -3,7 +3,6 @@ package com.pvpitup.arcade;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -112,11 +111,9 @@ public class tempData {
 			
 			public void run() {
 				
-				Player p = (Player) Bukkit.getOnlinePlayers();
+				Inventory selector = Bukkit.createInventory(null, 9, "Select A Team");
 				
-				Inventory selector = Bukkit.createInventory(p, 9, "Select A Team");
-				
-				int size = Bukkit.getOnlinePlayers().size();
+				int size = Bukkit.getOnlinePlayers().length;
 				if (size >= 2) {
 					Bukkit.getScheduler().cancelTask(doneVotingGame());
 					int perTeam = size / 2;
@@ -125,7 +122,6 @@ public class tempData {
 					ItemMeta tSM = tS.getItemMeta();
 					tSM.setDisplayName("Team Selector");
 					tS.setItemMeta(tSM);
-					p.getInventory().setItem(1, tS);
 					
 					ItemStack red = new ItemStack(Material.WOOL, 1, (short) 14);
 					ItemMeta redM = red.getItemMeta();
@@ -137,12 +133,9 @@ public class tempData {
 					blueM.setDisplayName(ChatColor.BLUE + "Join " + ChatColor.BOLD + "Blue" + ChatColor.BLUE + " Team");
 					blue.setItemMeta(blueM);
 					
-					p.openInventory(selector);
-					
 				}else{
 					return;
 				}
-				
 			}
 		}, 0L, 60L * 5);
 	}
