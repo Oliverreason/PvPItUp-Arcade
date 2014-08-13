@@ -52,7 +52,7 @@ public class Arcade extends JavaPlugin {
 		
 		SettingsManager.getInstance().setup(this);
 		
-		state = GameState.LOBBY;
+		state = GameState.INLOBBY;
 		
 		tempData.voteRunnable();
 		
