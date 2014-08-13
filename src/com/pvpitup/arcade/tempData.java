@@ -75,13 +75,13 @@ public class tempData {
 					}
 					if (num == 0) {
 						Bukkit.broadcastMessage(Arcade.prefix + ChatColor.GREEN + "" + ChatColor.BOLD + "Avaliable Games");
-						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "1" + ChatColor.RED + " - " +  ChatColor.AQUA + "CaptureTheChicken" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteCTD() + ChatColor.AQUA + " Votes!");
+						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "1" + ChatColor.RED + " - " +  ChatColor.AQUA + "CaptureTheDog" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteCTD() + ChatColor.AQUA + " Votes!");
 						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "2" + ChatColor.RED + " - " +  ChatColor.AQUA + "LastManStanding" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteLMS() + ChatColor.AQUA + " Votes!");
 						Bukkit.broadcastMessage("");
 						num ++;
 					} else if (num == 1) {
 						Bukkit.broadcastMessage(Arcade.prefix + ChatColor.GREEN + "" + ChatColor.BOLD + "Avaliable Games");
-						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "1" + ChatColor.RED + " - " +  ChatColor.AQUA + "CaptureTheChicken" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteCTD() + ChatColor.AQUA + " Votes!");
+						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "1" + ChatColor.RED + " - " +  ChatColor.AQUA + "CaptureTheDog" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteCTD() + ChatColor.AQUA + " Votes!");
 						Bukkit.broadcastMessage("" + ChatColor.GOLD + ChatColor.BOLD + "2" + ChatColor.RED + " - " +  ChatColor.AQUA + "LastManStanding" + ChatColor.RED + "  -  " + ChatColor.AQUA + "With " + ChatColor.GOLD + ChatColor.BOLD + tempData.getVoteLMS() + ChatColor.AQUA + " Votes!");
 						Bukkit.broadcastMessage("");
 						num = 0;
