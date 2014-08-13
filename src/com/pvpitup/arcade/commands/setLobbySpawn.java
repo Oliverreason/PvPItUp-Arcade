@@ -7,6 +7,8 @@ import org.bukkit.entity.Player;
 
 import com.pvpitup.arcade.SettingsManager;
 
+import com.pvpitup.arcade.Arcade;
+
 public class setLobbySpawn {
 	
 SettingsManager sm = SettingsManager.getInstance();
