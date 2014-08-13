@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import com.pvpitup.arcade.tempData;
+import com.pvpitup.arcade.Arcade;
 
 public class VoteCommand implements CommandExecutor {
 	
